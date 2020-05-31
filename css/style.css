@@ -1,23 +1,32 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+
 body {
   margin: 0;
   padding: 0;
   text-align: center;
-  background-color: orange;
-  font-family: 'Piedra', cursive;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Nosifer', cursive;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  background-image: url("../itl.cat_halloween-wallpaper_2289847.png"); 
+  text-shadow: 5px 5px   #ff7518;
+  color: purple;
+  font-size: 5vh;
+}
+  
+.grandaddydiv {
+  position: relative;
+  margin: 0 auto;
   
 }
 
-h1 {
-  color: rgb(0, 255, 255);
-  height: 100px;
-  border: 2px solid black;
-  font-size: 75px;
+#id {
   font-family: 'Piedra', cursive;
-  margin: 0;
+  margin: 0; 
 }
 
 .board {
@@ -28,28 +37,34 @@ h1 {
   align-items: center;
   justify-items: center;
   grid-template-columns: repeat(3, auto);
-}
+  position: absolute;
+  width: 100%;
+  background-image: linear-gradient(rgba(212, 0, 255, 0.3), rgba(255, 187, 0, 0.3), rgba(204, 194, 194, 0.3) );
+
+  }
+
 span {
-  padding-top: 15px;
+  padding-top: 10px;
   display: inline-block;
 }
-
-
 
 .cell {
   float: left;
   width: 150px;
   height: 150px;
   box-sizing: border-box;
-  border: solid 2px turquoise;
+  border: inset 8px #f4f3ef;
   font-size: 90px;
+}
 
-
+button {
+  width: 50px;
+  z-index: ;
 }
 
 .cell:hover  { 
   /* Yes, I followed a tutorial for this part, I liked the cosmetic look of this to I added it ':hover' acts like a scipt in the sense that when it detects a hover(mouse on top) it will activate the background color. I thought it was a REALLY cool function and it helped me not stress so much */
-  background-color: silver;
+  background-color: #738276;
 
 }
 /* This was what i had before but then it dawned on me - 

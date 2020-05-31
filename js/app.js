@@ -5,7 +5,7 @@
 
 
 var player=[]; //the variable 'players' equal a not yet determind array - will be determined later in code.
-var markers=[":)",":D"]; //the variable 'markers' is equal to (defined as) the array of X and O
+var markers=["🎃","👻"]; //the variable 'markers' is equal to (defined as) the array of X and O
 // if i want to see the marker or alert(0, for x or 1 for 0)
 var scores = [0,0]; // this arrays both elements are the value of 0 in the 0 and the 1 spot - this is basically saying [x(player1), 0(player2)] and then i need to increase the number for their score
 player[0] = "Player 1";
@@ -23,7 +23,7 @@ function winnerCheck() { // checking the winners scores
     for (var i = 0; i < winCondition.length; i++) { // i equals 0 as long as i is less than the length of the winValue
         if ((winCondition[i] & scores[playerTurn]) == winCondition[i]) { // so i orginally if (winCondition[i] & scores[playerTurn] == winCondition[i]) { and it wasnt calculating wincondistions properly there were certain parameters that messed it up bascially this does the math without doing proper math i needed
             gameEnd = true;
-            alert (player[playerTurn] + " is the Winner!!");
+            alert ("For that THICC" + player[playerTurn] + " is the Winner!!");
         }
 
     } 
