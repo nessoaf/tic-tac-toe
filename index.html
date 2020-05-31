@@ -2,12 +2,30 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Piedra&display=swap');
+    </style>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hello Front-End</title>
+  <title>Tic Tac Toe</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+  <h1 id="Pname">Tic Tac Toe</h1>
+  <div class="board"
+  id="board">
+    <div onclick="game(this, 1);" class="cell a">&nbsp;</div>  
+    <!-- the value of 'this' is the divs itself  its is a global function calling for this item of itself or item(object) of this @anna one of the YT vids i watched to explain js explained this and made it less confusing-->
+    <div onclick="game(this, 2);" class="cell b">&nbsp;</div>
+    <div onclick="game(this, 4);" class="cell c">&nbsp;</div>
+    <div onclick="game(this, 8);" class="cell d">&nbsp;</div>
+    <div onclick="game(this, 16);" class="cell e">&nbsp;</div>
+    <div onclick="game(this, 32);" class="cell f">&nbsp;</div>
+    <div onclick="game(this, 64);" class="cell g">&nbsp;</div>
+    <div onclick="game(this, 128);" class="cell h">&nbsp;</div>
+    <div onclick="game(this, 256);" class="cell i">&nbsp;</div>
+  </div>
+  <div class="endscreen"></div>
+  <button id="restart">Reset</button>
 
   <script type="text/javascript" src="js/app.js"></script>
 </body>

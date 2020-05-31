@@ -1,3 +1,133 @@
-h1 {
-  color: purple;
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: orange;
+  font-family: 'Piedra', cursive;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  
 }
+
+h1 {
+  color: rgb(0, 255, 255);
+  height: 100px;
+  border: 2px solid black;
+  font-size: 75px;
+  font-family: 'Piedra', cursive;
+  margin: 0;
+}
+
+.board {
+  height: 60vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: repeat(3, auto);
+}
+span {
+  padding-top: 15px;
+  display: inline-block;
+}
+
+
+
+.cell {
+  float: left;
+  width: 150px;
+  height: 150px;
+  box-sizing: border-box;
+  border: solid 2px turquoise;
+  font-size: 90px;
+
+
+}
+
+.cell:hover  { 
+  /* Yes, I followed a tutorial for this part, I liked the cosmetic look of this to I added it ':hover' acts like a scipt in the sense that when it detects a hover(mouse on top) it will activate the background color. I thought it was a REALLY cool function and it helped me not stress so much */
+  background-color: silver;
+
+}
+/* This was what i had before but then it dawned on me - 
+i used a video that explained that i didnt need to multuply 
+do it if id name the classes the same.
+Im leaving this in just to help me in the future
+.a {
+  float: left;
+  width: 150px;
+  height: 150px;
+  box-sizing: border-box;
+  border: solid 2px turquoise ;
+}
+
+.b { 
+  float: left;
+  width: 150px;
+  height: 150px;
+  box-sizing: border-box;
+  border: solid 2px turquoise ;
+}
+
+
+.c {
+  float: left;
+  width: 150px;
+  height: 150px;
+  box-sizing: border-box;
+  border: solid 2px turquoise ;
+}
+
+
+.d {
+  float: left;
+  width: 150px;
+  height: 150px;
+  box-sizing: border-box;
+  border: solid 2px turquoise ;
+}
+
+
+.e {
+  float: left;
+  width: 150px;
+  height: 150px;
+  box-sizing: border-box;
+  border: solid 2px turquoise ;
+}
+
+.f {
+  float: left;
+  width: 150px;
+  height: 150px;
+  box-sizing: border-box;
+  border: solid 2px turquoise ;
+}
+
+.g {
+  float: left;
+  width: 150px;
+  height: 150px;
+  box-sizing: border-box;
+  border: solid 2px turquoise ;
+}
+
+.h {
+  float: left;
+  width: 150px;
+  height: 150px;
+  box-sizing: border-box;
+  border: solid 2px turquoise ;
+}
+
+.i {
+  float: left;
+  width: 150px;
+  height: 150px;
+  box-sizing: border-box;
+  border: solid 2px turquoise ;
+}
+*/
