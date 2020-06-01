@@ -21,12 +21,19 @@ function pointCount (points) { // ANNOTATION!! This is not the same as ln25
 function winnerCheck() { // checking the winners scores
     console.log (scores[0] + " " + scores[1]);
     for (var i = 0; i < winCondition.length; i++) { // i equals 0 as long as i is less than the length of the winValue
+        
         if ((winCondition[i] & scores[playerTurn]) == winCondition[i]) { // so i orginally if (winCondition[i] & scores[playerTurn] == winCondition[i]) { and it wasnt calculating wincondistions properly there were certain parameters that messed it up bascially this does the math without doing proper math i needed
             gameEnd = true;
             alert (player[playerTurn] + " is the Thiccest XD !!");
         }
-
     } 
+    
+    if (((scores[0] + scores[1]) == 511 ) && !gameEnd) { //this line of code is if the scores of both player equal the total of 511 AND the game is not over give an alert and make the game end
+        alert ("Spooky DRAW");
+        gameEnd = true
+
+    }
+    
 }
 
 function game(gameDiv, pointsPlayer) { //if the box is empty add a player marker if the box is populater dont so to do that i add and if statement ... points was added later - learning/watching i also added 1 2 4 8 16 etc to onclick / also this is the declaration of points 
@@ -64,3 +71,13 @@ function alternatePlayer() {
 //if the box is empty add a player marker if the box is populater dont 
 
 //I wasnt sure how or where to check for win conditions so i kept using the video to kinda piece this together
+
+//resetfunction this was a total cluster f***. Could not get this to work to save my life - the deficition i think was right but the reset didnt know whhat to reset? maybe? i give up
+/* function resetGame(reset) {
+    if (gameEnd);
+    if (reset.innerHTML == "<span>" + markers[playerTurn] + "</span>") {
+        reset.innerHTML = "&nbsp;";
+        gameEnd = true;
+
+    }
+} */

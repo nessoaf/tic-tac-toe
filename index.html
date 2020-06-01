@@ -11,10 +11,14 @@
 </head>
 <body>
   <h1 id="Pname">Thicc Tac Toe</h1>
+  <head>there can only be one thicc</head>
+  <br>
+  <!-- this button would not work and i just ended up scapping it. <input type="reset" value="Restart again you Sexyy Thanggg" onclick="resetGame(this, clear)"> -->
   <div class="grandaddydiv">
     <div class="board" id="board">
       <div onclick="game(this, 1);" class="cell a">&nbsp;</div>  
-      <!-- the value of 'this' is the divs itself  its is a global function calling for this item of itself or item(object) of this @anna one of the YT vids i watched to explain js explained this and made it less confusing-->
+      <!-- the value of 'this' is the divs itself  its is a global function calling for this item of itself or item(object) of this 
+        @anna one of the YT vids i watched to explain js explained this and made it a little less confusing-->
       <div onclick="game(this, 2);" class="cell b">&nbsp;</div>
       <div onclick="game(this, 4);" class="cell c">&nbsp;</div>
       <div onclick="game(this, 8);" class="cell d">&nbsp;</div>
@@ -22,15 +26,9 @@
       <div onclick="game(this, 32);" class="cell f">&nbsp;</div>
       <div onclick="game(this, 64);" class="cell g">&nbsp;</div>
       <div onclick="game(this, 128);" class="cell h">&nbsp;</div>
-      <div onclick="game(this, 256);" class="cell i">&nbsp;</div>
-    </div></div>
-  <div class="endscreen"></div>
-  <form action="reset">
-    <div id="resbutton">
-  <button id="restart">Reset</button>
-</div>
-</form>
-
-  <script type="text/javascript" src="js/app.js"></script>
+      <div onclick="game(this, 256);" class="cell i">&nbsp;</div>      
+    </div>
+    </div>
+    <script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
