@@ -1,5 +1,5 @@
 // turorial that helped me https://www.youtube.com/watch?v=XwPVlXb5thI and https://www.youtube.com/watch?v=YOViDMVWac8
-//I was able to piece together bots a pieces from seeing the code he used to filter out some of my issues  ";, mispelled, forgetting things" because he went over it after the fact with his actual class - tthis was a webinar on yt for a class while i can NOW explain the codeing i still cant seem to fully piece it together in my head there is a diconnect between using and reading that i hope ill fix here soon. also most of my annotations are for me in the future if im looking back on this and am confused.
+//I was able to piece together bits a pieces from seeing the code he used to filter out some of my issues  "mispelled, forgetting things" because he went over it after the fact with his actual class - his was a webinar on yt for a class while i can NOW explain the codeing i still cant seem to fully piece it together in my head there is a diconnect between using and reading that i hope ill fix here soon. also most of my annotations are for me in the future if im looking back on this and am confused.
 
 
 
@@ -23,7 +23,7 @@ function winnerCheck() { // checking the winners scores
     for (var i = 0; i < winCondition.length; i++) { // i equals 0 as long as i is less than the length of the winValue
         if ((winCondition[i] & scores[playerTurn]) == winCondition[i]) { // so i orginally if (winCondition[i] & scores[playerTurn] == winCondition[i]) { and it wasnt calculating wincondistions properly there were certain parameters that messed it up bascially this does the math without doing proper math i needed
             gameEnd = true;
-            alert ("For that THICC" + player[playerTurn] + " is the Winner!!");
+            alert (player[playerTurn] + " is the Thiccest XD !!");
         }
 
     } 
@@ -45,9 +45,7 @@ function game(gameDiv, pointsPlayer) { //if the box is empty add a player marker
     }
 }
 }
-
 //this in conjuction with html"onclick... replaces document.getElementById does the same thing in this case
-
 //also I originally had:
 /* function game(gameDiv) {
     gameDiv.innerText = "x";
